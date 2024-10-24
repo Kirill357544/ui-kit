@@ -1,0 +1,38 @@
+{
+  "name": "@react-components/ui-kit",
+  "version": "0.0.1",
+  "main": "./index.ts",
+  "description": "React-components UI kit",
+  "scripts": {
+    "prebuild": "node ./scripts/clean.mjs",
+    "build": "tsc --declaration",
+    "prepublish:dist": "node ./scripts/copy-package-meta.mjs",
+    "publish:dist": "node ./scripts/publish-dist.mjs",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lalov Kirill",
+  "license": "ISC",
+  "devDependencies": {
+    "@chromatic-com/storybook": "^1.9.0",
+    "@storybook/addon-essentials": "^8.3.6",
+    "@storybook/addon-interactions": "^8.3.6",
+    "@storybook/addon-links": "^8.3.6",
+    "@storybook/addon-onboarding": "^8.3.6",
+    "@storybook/blocks": "^8.3.6",
+    "@storybook/react": "^8.3.6",
+    "@storybook/react-vite": "^8.3.6",
+    "@storybook/test": "^8.3.6",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "storybook": "^8.3.6",
+    "typescript": "^5.6.3"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  }
+}
